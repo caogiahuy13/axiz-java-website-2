@@ -263,4 +263,5 @@ article .form-input {
   width: auto;
   height: 128px;
   border: solid 3px green;
+  margin-right: 5px;
 }
