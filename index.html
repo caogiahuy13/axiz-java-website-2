@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/validationEngine.jquery.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
     <script src="js/tool.js"></script>
@@ -19,11 +20,21 @@
     <div>
       <h3>社員ＩＤとパスワードを入力してください</h3>
       <article>
-        <form action="./calendar.html">
+        <form id="myForm" action="./calendar.html">
           <label class="form-label" for="id">社員ID</label><br />
-          <input type="text" id="id" name="id" /><br />
+          <input
+            class="validate[required]"
+            type="text"
+            id="id"
+            name="id"
+          /><br />
           <label class="form-label" for="pass">パスワード</label><br />
-          <input type="password" id="pass" name="pass" /><br />
+          <input
+            class="validate[required,minSize[8]]"
+            type="password"
+            id="pass"
+            name="pass"
+          /><br />
           <input type="checkbox" id="show_pass" name="checkbox" />
           <label class="cb-label" for="show_pass">パスワードを表示する</label
           ><br />
@@ -39,7 +50,21 @@
     </footer>
 
     <script src="./js/lightbox.js"></script>
+    <script
+      src="js/jquery.validationEngine.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="js/jquery.validationEngine-ja.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
     <script>
+      jQuery(document).ready(() => {
+        $("#myForm").validationEngine();
+      });
+
       let images = ["line.jpg", "cafe.jpg", "cats.jpg"];
       images.forEach((image) => {
         $("#lightbox-container").append(`
