@@ -131,7 +131,7 @@ table.sample td.weekday {
   background-color: #f0fff0;
 }
 
-table.sample td.weekday:hover {
+table.sample td:hover {
   background-color: #00ffff;
 }
 
