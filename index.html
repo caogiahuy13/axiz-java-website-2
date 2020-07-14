@@ -17,15 +17,18 @@
 
     <div>
       <h3>社員ＩＤとパスワードを入力してください</h3>
-      <form action="./calendar.html">
-        <label for="id">社員ID</label><br />
-        <input type="text" id="id" name="id" /><br />
-        <label for="password">パスワード</label><br />
-        <input type="password" id="password" name="password" /><br />
-        <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" />
-        <label for="checkbox">パスワードを表示する</label><br />
-        <button type="submit" value="Submit">ログイン</button>
-      </form>
+      <article>
+        <form action="./calendar.html">
+          <label class="form-label" for="id">社員ID</label><br />
+          <input type="text" id="id" name="id" /><br />
+          <label class="form-label" for="pass">パスワード</label><br />
+          <input type="password" id="pass" name="pass" /><br />
+          <input type="checkbox" id="show_pass" name="checkbox" />
+          <label class="cb-label" for="show_pass">パスワードを表示する</label
+          ><br />
+          <button class="button" type="submit" value="Submit">ログイン</button>
+        </form>
+      </article>
     </div>
 
     <footer>

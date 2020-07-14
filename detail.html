@@ -23,56 +23,56 @@
         </script>
         です
       </h2>
+      <br />
 
-      <table class="sample" border="1">
+      <table class="detail" border="1">
+        <colgroup id="time"></colgroup>
+        <colgroup id="important"></colgroup>
+        <colgroup id="usual"></colgroup>
+        <colgroup id="else"></colgroup>
+        <colgroup id="memo"></colgroup>
         <tbody>
           <tr>
             <th colspan="7" class="title"><h2>スケジュールリスト</h2></th>
           </tr>
           <tr>
-            <th class="weekend"><h2>時間</h2></th>
-            <th class="weekday"><h2>重要</h2></th>
-            <th class="weekday"><h2>通常業務</h2></th>
-            <th class="weekday"><h2>その他</h2></th>
-            <th class="weekday"><h2>メモ</h2></th>
+            <th id="header-time"><h3>時間</h3></th>
+            <th id="header-important"><h3>重要</h3></th>
+            <th id="header-usual"><h3>通常業務</h3></th>
+            <th id="header-else"><h3>その他</h3></th>
+            <th id="header-memo"><h3>メモ</h3></th>
           </tr>
           <tr>
-            <td class="weekend">
-              <h2><a href="detail.html"> </a>10:00</h2>
+            <td class="time"><h3>10:00</h3></td>
+            <td class="important">
+              株式会社Java様打ち合わせ<br />場所：応接室A
             </td>
-            <td class="weekday">株式会社Java様打ち合わせ<br />場所：応接室A</td>
-            <td class="weekday"></td>
-            <td class="weekday"></td>
-            <td class="weekday"></td>
+            <td class="business"></td>
+            <td class="others"></td>
+            <td class="note"></td>
           </tr>
           <tr>
-            <td class="weekend">
-              <h2><a href="detail.html"> </a>13:00</h2>
-            </td>
-            <td class="weekday"></td>
-            <td class="weekday">研修準備</td>
-            <td class="weekday"></td>
-            <td class="weekday">資料完成後、テクノ課長に印刷依頼</td>
+            <td class="time"><h3>13:00</h3></td>
+            <td class="important"></td>
+            <td class="business">研修準備</td>
+            <td class="others"></td>
+            <td class="note">資料完成後、テクノ課長に印刷依頼</td>
           </tr>
           <tr>
-            <td class="weekend">
-              <h2><a href="detail.html"> </a>16:00</h2>
-            </td>
-            <td class="weekday">
+            <td class="time"><h3>16:00</h3></td>
+            <td class="important">
               株式会社SQL様 TEL<br />用件：請求書の確認依頼
             </td>
-            <td class="weekday"></td>
-            <td class="weekday"></td>
-            <td class="weekday"></td>
+            <td class="business"></td>
+            <td class="others"></td>
+            <td class="note"></td>
           </tr>
           <tr>
-            <td class="weekend">
-              <h2><a href="detail.html"> </a>17:00</h2>
-            </td>
-            <td class="weekday"></td>
-            <td class="weekday"></td>
-            <td class="weekday">飲み会メールの送信</td>
-            <td class="weekday">
+            <td class="time"><h3>17:00</h3></td>
+            <td class="important"></td>
+            <td class="business"></td>
+            <td class="others">飲み会メールの送信</td>
+            <td class="note">
               20日にリマインド<br />22日までに、お店に人数を伝える
             </td>
           </tr>
@@ -80,8 +80,13 @@
       </table>
 
       <form action="./logout.html">
-        <input type="button" value="マイページ" />
-        <input type="submit" value="ログアウト" />
+        <input
+          class="button"
+          type="button"
+          value="マイページ"
+          onclick="window.location='./calendar.html';"
+        />
+        <input class="button" type="submit" value="ログアウト" />
       </form>
     </div>
 
