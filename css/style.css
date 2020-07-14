@@ -227,11 +227,16 @@ span.logout-time {
 
 /* フォーム */
 article .form-label {
-  margin-left: 10px;
+  margin: 10px;
+  font-weight: bold;
 }
 
 article .cb-label {
   font-size: 14px;
+}
+
+article .form-input {
+  margin: 10px;
 }
 
 /* ボタン */
