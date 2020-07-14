@@ -1,23 +1,92 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
 
-<script
-  src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-<script src="js/tool.js"></script>
-<title>スケジュール詳細</title>
-</head>
-<body>
-  <header>
-    <h2>
-      <a href="calendar.html"> <img src="images/logo.png">
-      </a>4月1日のスケジュール
-    </h2>
-  </header>
-  <footer>
-    <small>Copyright &copy; C-Sche, all rights reserved.</small>
-  </footer>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="js/tool.js"></script>
+    <title>スケジュール詳細</title>
+  </head>
+  <body>
+    <header>
+      <h2>
+        <a href="calendar.html"> <img src="images/logo.png" /> </a
+        >4月1日のスケジュール
+      </h2>
+    </header>
+
+    <div>
+      <h2>
+        <script>
+          showDate();
+        </script>
+        です
+      </h2>
+
+      <table class="sample" border="1">
+        <tbody>
+          <tr>
+            <th colspan="7" class="title"><h2>スケジュールリスト</h2></th>
+          </tr>
+          <tr>
+            <th class="weekend"><h2>時間</h2></th>
+            <th class="weekday"><h2>重要</h2></th>
+            <th class="weekday"><h2>通常業務</h2></th>
+            <th class="weekday"><h2>その他</h2></th>
+            <th class="weekday"><h2>メモ</h2></th>
+          </tr>
+          <tr>
+            <td class="weekend">
+              <h2><a href="detail.html"> </a>10:00</h2>
+            </td>
+            <td class="weekday">株式会社Java様打ち合わせ<br />場所：応接室A</td>
+            <td class="weekday"></td>
+            <td class="weekday"></td>
+            <td class="weekday"></td>
+          </tr>
+          <tr>
+            <td class="weekend">
+              <h2><a href="detail.html"> </a>13:00</h2>
+            </td>
+            <td class="weekday"></td>
+            <td class="weekday">研修準備</td>
+            <td class="weekday"></td>
+            <td class="weekday">資料完成後、テクノ課長に印刷依頼</td>
+          </tr>
+          <tr>
+            <td class="weekend">
+              <h2><a href="detail.html"> </a>16:00</h2>
+            </td>
+            <td class="weekday">
+              株式会社SQL様 TEL<br />用件：請求書の確認依頼
+            </td>
+            <td class="weekday"></td>
+            <td class="weekday"></td>
+            <td class="weekday"></td>
+          </tr>
+          <tr>
+            <td class="weekend">
+              <h2><a href="detail.html"> </a>17:00</h2>
+            </td>
+            <td class="weekday"></td>
+            <td class="weekday"></td>
+            <td class="weekday">飲み会メールの送信</td>
+            <td class="weekday">
+              20日にリマインド<br />22日までに、お店に人数を伝える
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form action="./logout.html">
+        <input type="button" value="マイページ" />
+        <input type="submit" value="ログアウト" />
+      </form>
+    </div>
+
+    <footer>
+      <small>Copyright &copy; C-Sche, all rights reserved.</small>
+    </footer>
+  </body>
 </html>
