@@ -1,0 +1,218 @@
+@charset "UTF-8";
+body {
+  font-family: 'メイリオ';
+  background: url(../images/town.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:calc(100vh - 16px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ヘッダー */
+header {
+  background-color: #ffffff;
+  height: 60px;
+  border-style: outset;
+  border-color: #afeeee;
+  border-top: solid 5px #e0ffff;
+  border-bottom: solid 5px #afeeee;
+  border-right: solid 7px #e0ffff;
+  border-left: solid 7px #afeeee;
+  box-shadow: 7px 7px 3px #c0c0c0;
+}
+
+header h2 img {
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: 5px;
+  width: 100px;
+  height: auto;
+}
+
+/* フッター */
+footer {
+  margin-top: auto;
+}
+
+small {
+  font-size: 20px;
+  color: #a9a9a9
+}
+
+/* 見出し、リンク */
+h2 {
+  margin: 10px;
+}
+
+h3 {
+  margin: 10px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.image img {
+  vertical-align: middle;
+  border-style: outset;
+  border-color: #87cefa;
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: auto;
+  height: 120px;
+}
+
+/* ボタン */
+.btn a {
+  display: block;
+  width: 150px;
+  margin: 30px 10px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  background-color: #87cefa;
+  border-radius: 10px;
+  box-shadow: 0px 3px #1e90ff, 0px 6px #c0c0c0;
+}
+
+.btnTable{
+  align-self: start;
+}
+
+/* テキストボックスの設定 */
+textarea {
+  display: block;
+}
+
+input {
+  height: 20px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* テーブル：sample */
+table.sample {
+  margin-left: 5px;
+  width: 1000px;
+}
+
+table.sample th {
+  height: 80px;
+}
+
+table.sample th.title {
+  height: 60px;
+  background-color: #ffffff;
+}
+
+table.sample th.weekend {
+  background-color: #ffb6c1;
+}
+
+table.sample th.weekday {
+  background-color: #98fb98
+}
+
+table.sample td {
+  height: 80px;
+  text-align: center;
+}
+
+table.sample td.weekend {
+  background-color: #fff0f5;
+}
+
+table.sample td.weekday {
+  background-color: #f0fff0
+}
+
+table.sample td.today {
+  background-color: #87cefa
+}
+
+/* テーブル：detail */
+table.detail {
+  align-self: start;
+}
+
+table.detail tr td:first-child {
+  text-align: center;
+}
+
+table.detail td {
+  height: 60px;
+}
+
+/* タイトル行設定 */
+table.detail th {
+  height:20px;
+}
+
+table.detail th#header-time {
+  width:100px;
+  background-color: #ffffff;
+}
+
+table.detail th#header-important {
+  width:250px;
+  background-color: #ffb6c1;
+}
+
+table.detail th#header-usual {
+  width:250px;
+  background-color: #98fb98;
+}
+
+table.detail th#header-else {
+  width:250px;
+  background-color: #dcdcdc;
+}
+
+table.detail th#header-memo {
+  width:400px;
+  background-color: #afeeee;
+}
+
+/* 列ごとのセル背景色設定 */
+table.detail colgroup#time {
+  background-color: #ffffff;
+}
+
+table.detail colgroup#important {
+  background-color: #fff0f5;
+}
+
+table.detail colgroup#usual {
+  background-color: #f0fff0;
+}
+
+table.detail colgroup#else {
+  background-color: #f5f5f5;
+}
+
+table.detail colgroup#memo {
+  background-color: #f0f8ff;
+}
+
+article {
+  background-color: #f0f8ff;
+  width: 300px;
+  border: solid 1px #87cefa;
+  border-radius: 20px;
+  margin-left: 10px;
+  padding: 20px;
+  box-shadow: 3px 3px 3px #c0c0c0;
+}
+
+span.show-pw {
+  font-size: 90%
+}
+
+span.logout-time{
+  font-size: 150%
+}

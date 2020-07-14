@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="js/tool.js"></script>
+    <title>ログイン</title>
+  </head>
+  <body>
+    <header>
+      <h2>
+        <a href="index.html"> <img src="images/logo.png" /> </a>ログインページ
+      </h2>
+    </header>
+
+    <div>
+      <h3>社員ＩＤとパスワードを入力してください</h3>
+      <form action="./calendar.html">
+        <label for="id">社員ID</label><br />
+        <input type="text" id="id" name="id" /><br />
+        <label for="password">パスワード</label><br />
+        <input type="password" id="password" name="password" /><br />
+        <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" />
+        <label for="checkbox">パスワードを表示する</label><br />
+        <button type="submit" value="Submit">ログイン</button>
+      </form>
+    </div>
+
+    <footer>
+      <small>Copyright &copy; C-Sche, all rights reserved.</small>
+    </footer>
+  </body>
+</html>
