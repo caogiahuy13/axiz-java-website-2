@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
     <script src="js/tool.js"></script>
@@ -29,10 +30,24 @@
           <button class="button" type="submit" value="Submit">ログイン</button>
         </form>
       </article>
+
+      <div id="lightbox-container" class="lightbox-container"></div>
     </div>
 
     <footer>
       <small>Copyright &copy; C-Sche, all rights reserved.</small>
     </footer>
+
+    <script src="./js/lightbox.js"></script>
+    <script>
+      let images = ["line.jpg", "cafe.jpg", "cats.jpg"];
+      images.forEach((image) => {
+        $("#lightbox-container").append(`
+          <a href="./images/${image}" data-lightbox="${image}">
+            <img class="lightbox-img" src="./images/${image}"
+          /></a>
+        `);
+      });
+    </script>
   </body>
 </html>
