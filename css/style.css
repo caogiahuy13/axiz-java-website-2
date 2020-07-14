@@ -1,10 +1,10 @@
 @charset "UTF-8";
 body {
-  font-family: 'メイリオ';
+  font-family: "メイリオ";
   background: url(../images/town.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height:calc(100vh - 16px);
+  min-height: calc(100vh - 16px);
   display: flex;
   flex-direction: column;
 }
@@ -37,7 +37,7 @@ footer {
 
 small {
   font-size: 20px;
-  color: #a9a9a9
+  color: #a9a9a9;
 }
 
 /* 見出し、リンク */
@@ -80,7 +80,7 @@ a {
   box-shadow: 0px 3px #1e90ff, 0px 6px #c0c0c0;
 }
 
-.btnTable{
+.btnTable {
   align-self: start;
 }
 
@@ -115,7 +115,7 @@ table.sample th.weekend {
 }
 
 table.sample th.weekday {
-  background-color: #98fb98
+  background-color: #98fb98;
 }
 
 table.sample td {
@@ -128,11 +128,15 @@ table.sample td.weekend {
 }
 
 table.sample td.weekday {
-  background-color: #f0fff0
+  background-color: #f0fff0;
+}
+
+table.sample td.weekday:hover {
+  background-color: #00ffff;
 }
 
 table.sample td.today {
-  background-color: #87cefa
+  background-color: #87cefa;
 }
 
 /* テーブル：detail */
@@ -150,31 +154,31 @@ table.detail td {
 
 /* タイトル行設定 */
 table.detail th {
-  height:20px;
+  height: 20px;
 }
 
 table.detail th#header-time {
-  width:100px;
+  width: 100px;
   background-color: #ffffff;
 }
 
 table.detail th#header-important {
-  width:250px;
+  width: 250px;
   background-color: #ffb6c1;
 }
 
 table.detail th#header-usual {
-  width:250px;
+  width: 250px;
   background-color: #98fb98;
 }
 
 table.detail th#header-else {
-  width:250px;
+  width: 250px;
   background-color: #dcdcdc;
 }
 
 table.detail th#header-memo {
-  width:400px;
+  width: 400px;
   background-color: #afeeee;
 }
 
@@ -210,9 +214,9 @@ article {
 }
 
 span.show-pw {
-  font-size: 90%
+  font-size: 90%;
 }
 
-span.logout-time{
-  font-size: 150%
+span.logout-time {
+  font-size: 150%;
 }
